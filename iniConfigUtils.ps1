@@ -3,8 +3,6 @@
 # Purpose: .ini Config Utils and Transcript Log Utils
 # Version: 1.0 - Oct 2019
 # -----------------------------------------------------------------------------------------
-
-
 # -----------------------------------------------------------------------------
 # The following routine was snagged from the "Hey, Scripting Guy! Blog".
 # It reads any reasonably-formatted .ini file into a specially-formatted hash file.
