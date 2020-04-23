@@ -94,8 +94,8 @@ function inspect_Reader
 
 # Load common functions
 [string]$currDir=Split-Path $MyInvocation.MyCommand.Definition -Parent
-. "$currDir\Scripts\SecurityFunctions.ps1"
-. "$currDir\Scripts\IniConfigUtils.ps1"
+. "$currDir\SecurityFunctions.ps1"
+. "$currDir\IniConfigUtils.ps1"
   
 # Init variables from ini file
 [string]$msrtVer=get-configured-item 'msrt' "Scripts"
@@ -166,4 +166,4 @@ reg.exe add "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\WinTrust\Trust Provi
 # stop transcript
 endTranscriptLogFile -file $transcriptFile 
 
-.\Scripts\FullScreenPause.ps1 "Installation Complete. A reboot is always a good idea..."
+.\FullScreenPause.ps1 "Installation Complete. A reboot is always a good idea..."
